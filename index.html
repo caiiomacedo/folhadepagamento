@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+        <h2>Holerite Digital 2026</h2>
+
+        <label for="salario">Salário Bruto (R$)</label>
+        <input type="number" id="salario" placeholder="Digite o salário">
+
+        <label for="inss">Desconto INSS (Tabela 2026)</label>
+        <input type="text" id="inss" disabled>
+
+        <label for="ir">Imposto de Renda (Isenção até 5k)</label>
+        <input type="text" id="ir" disabled>
+
+        <!-- 🔥 IMPORTANTE: id="botao" -->
+        <button type="button" id="botao">Calcular Agora</button>
+
+        <button type="reset" class="reset">Limpar Tudo</button>
+
+        <div class="resultado">
+            Salário Líquido Final:
+            <strong id="liquido">R$ 0,00</strong>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
